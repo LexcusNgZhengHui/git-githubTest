@@ -1,0 +1,18 @@
+create a flowchart with this format:"      
+A(["Start"])
+A --> B{"Decision"}
+B --> C["Option A"]
+B --> D["Option B"]"
+
+About: this is a flow about lipstick line inspection:
+
+Main 
+
+Centralise PC
+Robot Hand
+IPC- Vislab
+IPC- Custom Module
+
+First the robot hand will get the lipstick, next Centralise_PC it will get the info from robot hand and will send a info to the IPC, next the IPC will turn the status of the Viscam and Custom  software on (custom software will act as a middle men handle the insepction stuff), next the robot hand will move to the inspection panel, and then the viscam will use the 3 camera provide to cap and inspect the status of the lipstick, next the customaise software will get the analaysis info from the viscam, and save the image cap by vislab to 2 folder which is Pass or Fail (based on the result from viscam), and in this 2 folder will save the captured image and rename with Image, Date,Time. Next the custom software will share the info back to Centralise PC to next process.
+
+the custom software is the main control software, which it will receive and send info from and to Centralise PC, next the custom sofware will also get the result from viscam and the custom software will procced the info and send backto Centralise PC
